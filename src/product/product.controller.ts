@@ -49,7 +49,7 @@ export class ProductController {
 
   @ApiOperation({ summary: 'Delete one product' })
   @ApiParam({ name: 'productId' })
-  @ApiResponse({ description: 'success', type: Product })
+  @ApiOkResponse({ description: 'success', type: Product })
   @Delete(':productId')
   deleteProduct() {
     return;
