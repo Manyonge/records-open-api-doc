@@ -10,9 +10,24 @@ import {
 } from '@nestjs/swagger';
 import { CreateProductDto, UpdateProductDto } from './dto';
 import { Product } from './entities';
-@ApiTags('product')
+@ApiTags('Product')
 @Controller('products')
 export class ProductController {
+  @ApiOperation({ summary: 'Find all products' })
+  @ApiOkResponse({ description: 'Success', type: [Product] })
+  @Get()
+  findAllProducts() {
+    return;
+  }
+
+  @ApiOperation({ summary: 'Find one product' })
+  @ApiParam({ name: 'productId' })
+  @ApiOkResponse({ description: 'Success', type: Product })
+  @Get(':productId')
+  findOneProduct() {
+    return;
+  }
+
   @ApiOperation({
     summary: 'create a new product',
   })
@@ -20,13 +35,6 @@ export class ProductController {
   @ApiCreatedResponse({ description: 'Success', type: Product })
   @Post()
   createProduct(@Body() CreateProductDto: CreateProductDto) {
-    return;
-  }
-
-  @ApiOperation({ summary: 'Find all products' })
-  @ApiOkResponse({ description: 'Success', type: [Product] })
-  @Get()
-  findAllProducts() {
     return;
   }
 
