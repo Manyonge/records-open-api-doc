@@ -1,25 +1,16 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class Product {
-  @ApiProperty({ type: String, example: 'ertiohjoihd' })
+  @ApiProperty()
   _id: string;
-
-  @ApiProperty({ type: String })
+  @ApiProperty()
   name: string;
-  @ApiProperty({ type: Number })
+  @ApiProperty()
   buyingPrice: number;
-
-  @ApiProperty({ type: String })
+  @ApiProperty()
   restockDate: string;
-
-  @ApiProperty({ type: Number })
+  @ApiProperty()
   sellingPrice: number;
-
-  @ApiProperty({ type: String })
-  sellingDate: number;
-
-  @ApiProperty({ type: String, example: 'dfadfjdakh' })
-  createdAt: string;
-  @ApiProperty({ type: String, example: 'efadfdfiouyh' })
-  updateAt: string;
+  @ApiProperty()
+  sellingDate: string;
 }

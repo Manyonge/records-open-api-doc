@@ -1,1 +1,1 @@
-export { Delivery } from './Delivery.entity';
+export { Delivery } from './delivery.entity';

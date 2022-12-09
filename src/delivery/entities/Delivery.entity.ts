@@ -1,27 +1,14 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class Delivery {
-  @ApiProperty({ type: String, example: 'ertiohjoihd' })
+  @ApiProperty()
   _id: string;
-
-  @ApiProperty({ type: String, example: 'jordan 1 low' })
+  @ApiProperty()
   productName: string;
-
-  @ApiProperty({ type: String, example: 'difhiouhf' })
-  productId: string;
-
-  @ApiProperty({ type: String, example: '071234567' })
+  @ApiProperty()
   customerContact: string;
-
-  @ApiProperty({ type: String, example: 'pickup mtaani' })
+  @ApiProperty()
   deliveryMethod: string;
-
-  @ApiProperty({ type: String, example: 'delivered' })
+  @ApiProperty()
   status: string;
-
-  @ApiProperty({ type: String, example: 'dfadfjdakh' })
-  createdAt: string;
-
-  @ApiProperty({ type: String, example: 'efadfdfiouyh' })
-  updateAt: string;
 }

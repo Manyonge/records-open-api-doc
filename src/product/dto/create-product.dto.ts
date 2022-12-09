@@ -1,15 +1,14 @@
 import { ApiProperty } from '@nestjs/swagger';
 
 export class CreateProductDto {
-  @ApiProperty({ type: String })
+  @ApiProperty()
   name: string;
-
-  @ApiProperty({ type: Number })
+  @ApiProperty()
+  quantity: number;
+  @ApiProperty()
   buyingPrice: number;
-
-  @ApiProperty({ type: String })
+  @ApiProperty()
   restockDate: string;
-
-  @ApiProperty({ type: Number })
+  @ApiProperty()
   sellingPrice: number;
 }
