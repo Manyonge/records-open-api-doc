@@ -7,8 +7,6 @@ export class Product {
   @ApiProperty({ type: String })
   name: string;
   @ApiProperty({ type: Number })
-  quantity: number;
-  @ApiProperty({ type: Number })
   buyingPrice: number;
 
   @ApiProperty({ type: String })
@@ -16,6 +14,10 @@ export class Product {
 
   @ApiProperty({ type: Number })
   sellingPrice: number;
+
+  @ApiProperty({ type: String })
+  sellingDate: number;
+
   @ApiProperty({ type: String, example: 'dfadfjdakh' })
   createdAt: string;
   @ApiProperty({ type: String, example: 'efadfdfiouyh' })

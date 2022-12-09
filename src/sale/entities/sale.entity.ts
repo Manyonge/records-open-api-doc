@@ -5,8 +5,6 @@ export class Sale {
   productName: string;
   @ApiProperty({ type: String, example: 'diuyeriuh' })
   productId: string;
-  @ApiProperty({ type: Number, example: '1' })
-  quantity: number;
   @ApiProperty({ type: String, example: '2022-11-01' })
   saleDate: string;
   @ApiProperty({ type: Number, example: '15000' })
